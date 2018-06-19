@@ -12,14 +12,16 @@ package beans;
  */
 public class PostulanteBean {
     
-    private int id_postulante,id_usuario,id_ubigeo;
+    private int id_postulante,id_usuario;
+    private String pais;
     private String nombres,apellidos,estado_civil,sexo;
     private String ultima_actualizacion;
     private String mayor_nivel_estudio;
     private String mejor_carrera;
     private String institucion;
     private String email,rol;
-    private String fh_edicion;
+    private String fh_registro;
+    private String fh_extraccion;
     
 
     public PostulanteBean() {
@@ -43,13 +45,7 @@ public class PostulanteBean {
         this.id_usuario = id_usuario;
     }
 
-    public int getId_ubigeo() {
-        return id_ubigeo;
-    }
-
-    public void setId_ubigeo(int id_ubigeo) {
-        this.id_ubigeo = id_ubigeo;
-    }
+  
 
     public String getNombres() {
         return nombres;
@@ -131,12 +127,31 @@ public class PostulanteBean {
         this.mejor_carrera = mejor_carrera;
     }
 
-    public String getFh_edicion() {
-        return fh_edicion;
+    public String getFh_registro() {
+        return fh_registro;
     }
 
-    public void setFh_edicion(String fh_edicion) {
-        this.fh_edicion = fh_edicion;
+    public void setFh_registro(String fh_registro) {
+        this.fh_registro = fh_registro;
+    }
+
+   
+    
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getFh_extraccion() {
+        return fh_extraccion;
+    }
+
+    public void setFh_extraccion(String fh_extraccion) {
+        this.fh_extraccion = fh_extraccion;
     }
     
  
